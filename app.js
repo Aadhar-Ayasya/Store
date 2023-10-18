@@ -18,11 +18,19 @@ async function getapi(key) {
   const container = document.getElementById("container");
   container.innerHTML = compileddata;
 
+$(".product-category").on("click",function(){
+  debugger
+  getapi(categoryKey + this.innerText);
+});
 
-
-  $(".card").on("click", function () {
+  $(".product-title").on("click", function () {
     debugger
     let productid = this.id;
+    location.href = `product.html?id=${productid}`
+  })
+  $(".product-img").on("click", function () {
+    debugger
+    let productid = this.parentElement.id;
     location.href = `product.html?id=${productid}`
   })
 }
