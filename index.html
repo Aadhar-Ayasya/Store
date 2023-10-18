@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" style="margin-left: 50px;" src="Amazon-Logo.png" alt="" srcset="">
+        <nav>
+            <p style="color: white;">categories</p>
+            <button id="home"  value="Home" >home</button>
+            <button class="category" value="electronics">electronics</button>
+            <button class="category" value="jewelery" >jewelery</button>
+            <button class="category" value="women's clothing" >women's clothing</button>
+            <button class="category" value="men's clothing" >men's clothing</button>
+        </nav>
+    </header>
+    <div id="main-container">
+        <p id="status" style="font-size: 25px;">Home</p>
+        <div id="container">
+        </div>
+    </div>
+
+
+
+</body>
+<script id="products-template" type="text/x-handlebars-template">
+    {{#data}}
+    <div id="{{id}}" class="card">
+        <img class="product-img" src="{{{image}}}" alt="Article Image" />
+        <div class="product-content">
+            <h4 class="product-title">{{title}}</h4>
+            <a href="https://fakestoreapi.com/products/category/{{{category}}}">
+            <p class="product-category">{{category}}</p>
+        </a>
+            <p class="product-price">${{price}}</p>
+            <!-- <p class="product-des">{{description}}</p> -->
+            <!-- {{#rating}} -->
+            <!-- <p class="product-rating">Rating - {{rate}}</p> -->
+            <!-- <p class="product-reviews">no of reviews -- {{count}}</p> -->
+            <!-- {{/rating}} -->
+        </div>
+    </div>
+    {{/data}}
+  </script>
+<script src="app.js"></script>
+
+</html>

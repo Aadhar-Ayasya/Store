@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-img {
+    width: 200px;
+    aspect-ratio: auto;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.card {
+    overflow: overlay;
+    display: flex;
+    border: 1px solid rgba(116, 116, 116, 0.58);
+    align-items: center;
+    height: fit-content;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.product-content {
+    margin-left: 15px;
+}
+
+.product-title {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+p.product-category {
+    background-color: #f7e843bb;
+    display: inline-block;
+    padding: 2px 2px 0px 0px;
+    border-radius: 11px;
+    margin-top: 14px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+p.product-price {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+p.product-des {
+    font-size: 17px;
+}
+
+p.product-rating {
+    font-size: 23px;
+}
+
+header {
+    background-color: rgba(49, 49, 142, 0.792);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    left: 0;
+}
+
+nav button {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.58);
+
+}
+
+
+#main-container {
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.card a,
+.product-content a {
+    all: unset;
+}
+
+.card2 {
+    display: flex;
+    border: 1px solid rgba(116, 116, 116, 0.58);
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.product-img2 {
+    height: 700px;
+}
+.product-content2{
+    height: 100%;
+}
+.product-title2 {
+    font-size: 45px;
+}
+p.product-category2 {
+    display: inline;
+    color: black;
+    background-color: #f1ca44c9;
+    font-size: 20px;
+    padding: 5px;
+}
+.product-price2 {
+    margin-top: 25px;
+    font-size: 25px;
+}
+p.product-des2 {
+    font-size: 22px;
+    margin-top: 25px;
+}
+p.product-rating2 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+p.product-reviews2 {
+    font-size: 20px;
+}
